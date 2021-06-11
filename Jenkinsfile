@@ -2,17 +2,17 @@ pipeline{
     agent any
     stages{
         stage ('Inicio'){
-            step{
+            steps{
                 bat ('echo inciando')
             }
         }
         stage ('Restore'){
-            step{
+            steps{
                 bat ('dotnet restore')
             }
         }
         stage ('buildando'){
-            step{
+            steps{
                 bat ('dotnet build')
             }
         }
